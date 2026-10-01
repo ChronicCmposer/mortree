@@ -5,13 +5,13 @@ public class mortree {
 
    public static void main(String[] args) {
 
-      Tree wideTree = christmasTree(8).concatenateHorizontal(christmasTree(8).concatenateHorizontal(christmasTree(8).concatenateHorizontal(christmasTree(8))));
+      Tree wideTree = christmasTree(8).concatenateHorizontal(christmasTree(6).concatenateHorizontal(christmasTree(3).concatenateHorizontal(christmasTree(12))));
       wideTree.printTree();
-      wideTree = christmasTree(6).concatenateHorizontal(christmasTree(6).concatenateHorizontal(christmasTree(6).concatenateHorizontal(christmasTree(6))));
+      wideTree = christmasTree(10).concatenateHorizontal(christmasTree(4).concatenateHorizontal(christmasTree(5).concatenateHorizontal(christmasTree(6))));
       wideTree.printTree();
-      wideTree = christmasTree(4).concatenateHorizontal(christmasTree(4).concatenateHorizontal(christmasTree(4).concatenateHorizontal(christmasTree(4))));
+      wideTree = christmasTree(8).concatenateHorizontal(christmasTree(4).concatenateHorizontal(christmasTree(4).concatenateHorizontal(christmasTree(8))));
       wideTree.printTree();
-      wideTree = christmasTree(10).concatenateHorizontal(christmasTree(10).concatenateHorizontal(christmasTree(10).concatenateHorizontal(christmasTree(10))));
+      wideTree = christmasTree(10).concatenateHorizontal(christmasTree(16).concatenateHorizontal(christmasTree(5).concatenateHorizontal(christmasTree(10))));
       wideTree.printTree();
 
    }
@@ -53,7 +53,7 @@ public class mortree {
       return bigTriangle;
    }
 
-   private static String collectCharacterString(char character, int number) {
+   public static String collectCharacterString(char character, int number) {
       StringBuilder builder = new StringBuilder();
       for(int i = 0; i < number; i++) {
          builder.append(character);
